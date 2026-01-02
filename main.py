@@ -1,7 +1,10 @@
 import os
 import argparse
 from prompts import system_prompt
-from call_function import schema_get_files_info
+from call_function import (schema_get_files_info,
+schema_get_file_content, 
+schema_run_python_file, 
+schema_write_file)
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
@@ -13,7 +16,10 @@ if api_key is None:
     raise RuntimeError("no api found")
 
 available_functions = types.Tool(
-    function_declarations=[schema_get_files_info],
+    function_declarations=[schema_get_files_info,
+                           schema_get_file_content,
+                           schema_run_python_file,
+                           schema_write_file],
 )
 
 client = genai.Client(api_key=api_key)
