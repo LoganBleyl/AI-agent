@@ -3,7 +3,11 @@ revision = 3
 requires-python = ">=3.13"
 
 [[package]]
+<<<<<<< HEAD
 name = "ai-chat-bot"
+=======
+name = "ai-agent"
+>>>>>>> 72f3925 (final push)
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

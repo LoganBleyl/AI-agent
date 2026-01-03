@@ -1,5 +1,9 @@
 [project]
+<<<<<<< HEAD
 name = "ai-chat-bot"
+=======
+name = "ai-agent"
+>>>>>>> 72f3925 (final push)
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
